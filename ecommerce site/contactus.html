@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="kk.png" type="image/x-icon">
+    <title>Grabz</title>
+    <style>
+          *{
+            padding: 0%;
+            margin: 0%;
+        }
+         body{
+            background-image: url(ig1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+            .container{
+                color: white;
+            }
+            main {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.453);
+    padding: 15px;
+}
+
+.contact-form {
+    background: #1909094f;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccccccf1;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form .form-group textarea {
+    resize: none;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    background: white;
+    color: rgb(33, 27, 27)
+    
+;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contact-form .btn:hover {
+    background: #555;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="contact us ">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_contact.php" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
